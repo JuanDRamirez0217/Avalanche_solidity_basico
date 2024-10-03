@@ -15,7 +15,7 @@ contract tarea{
     string correo = "Tu correo es:";
 
     function leer_correo() public view returns(string memory){
-        return correo; 
+        return corre; 
         }
     
     function guardarcorreo(string memory Dame_tu_correo) public {
