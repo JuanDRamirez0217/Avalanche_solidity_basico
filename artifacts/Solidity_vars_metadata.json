@@ -158,11 +158,11 @@
 	},
 	"sources": {
 		"Solidity_vars.sol": {
-			"keccak256": "0x04674b14f4cb02858f275a3be2fe2f071f73f8cb86c3475ce51a91a017ed553e",
+			"keccak256": "0x70b34fd9f8ed1495568f59c4e3d5a7606542e550a8218597140bb5c1a4662dbc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1a431540950766a59140f27933891d64115280f2a64ea408c2d59717f5fdc876",
-				"dweb:/ipfs/QmPA2D5jtc5RgeskiBPkHGbKWe88BmmL4tF2D8qU5DWJXt"
+				"bzz-raw://faa999c1eabf5b2d102e7d55812c9d9726c6d752583c523e0d8a044ced808d66",
+				"dweb:/ipfs/QmWCDbBRri4CS1FvUXvbtiPrg9xCTWE5twG7ZhCBmXFGrQ"
 			]
 		}
 	},
