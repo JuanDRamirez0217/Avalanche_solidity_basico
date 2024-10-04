@@ -9,6 +9,30 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_edad_init",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "edad_init",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "_numero",
 						"type": "uint256"
 					}
@@ -73,11 +97,11 @@
 	},
 	"sources": {
 		"portero_didactico.sol": {
-			"keccak256": "0x591fb6a6512564620c0acfa40c8b8f2d67b6245fdbb235382003e289c8b3cc5d",
+			"keccak256": "0xb41da89f71feea28520efae898e3f18a36d092df3ec6ec0c039601c802187b4e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a5c8effec4b10c22a36a0979d118035a129601a5053317c48ed9fda3f62239ce",
-				"dweb:/ipfs/QmULntGa3ujzQgNMMfLd55K5mU1Ep6VgMk8SbzxvzEz7fC"
+				"bzz-raw://940a1a2e2bff64b2de4dce28c56a937f0dddeac6f1f2f7d155c80b3695426539",
+				"dweb:/ipfs/QmQ7hGrFshFhUUSpHagRpFxgdbxCoJJ35t6UkEMGByye91"
 			]
 		}
 	},
