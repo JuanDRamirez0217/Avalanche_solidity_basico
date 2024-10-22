@@ -1,0 +1,310 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					}
+				],
+				"name": "NotMember",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "proposalIndex",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "enum Governor.ProposalPosition",
+						"name": "proposalPosition",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "yesCount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "noCount",
+						"type": "uint256"
+					}
+				],
+				"name": "CastVote",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "proposalIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "NewProposal",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "alreadyVoted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Governor.ProposalPosition",
+						"name": "_proposalPosition",
+						"type": "uint8"
+					}
+				],
+				"name": "castVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getProposalByIndex",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "target",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint256",
+								"name": "yesCount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noCount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "executed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Governor.Proposal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getProposals",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "target",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint256",
+								"name": "yesCount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noCount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "executed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Governor.Proposal[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isMember",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_target",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "newProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "votePositions",
+				"outputs": [
+					{
+						"internalType": "enum Governor.ProposalPosition",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity Avanzado/Governor.sol": "Governor"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity Avanzado/Governor.sol": {
+			"keccak256": "0x185571df0009364cd9a0db5ccb0ecd36b41ea06845838639b3f26b1612f53566",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://afd3245144a3adb86d708addd8785d0f67107a7796e3da987ade2909d4e9a9dc",
+				"dweb:/ipfs/QmNiu1mBNPmuy88ZKV9QkjJV4mzFCJrpBRxUbYaGX3aF35"
+			]
+		}
+	},
+	"version": 1
+}
